@@ -28,7 +28,7 @@ Now you just have to copy that package to your application and define some gradl
   And congratulation, you have successfully set it up.
   
 	
-	Now in your activity or fragment wherver you want to get location just override on resume method of activity or fragment and add following.
+	Now in your activity or fragment wherever you want to get location just override on resume method of activity or fragment and add following.
 
 		  @Override
     protected void onResume() {
