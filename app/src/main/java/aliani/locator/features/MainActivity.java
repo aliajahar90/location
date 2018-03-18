@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity implements LocationView {
 
     }
 
-    @OnClick(R.id.locateMe)
-    public void onViewClicked() {
+    @Override
+    protected void onResume() {
+        super.onResume();
         new PermissionImpl(MainActivity.this,MainActivity.this).giveMeCurrentLocation();
     }
 
