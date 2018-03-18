@@ -11,14 +11,17 @@ Now you just have to copy that package to your application and define some gradl
            compile 'pub.devrel:easypermissions:1.0.1'
            
   step 2: add following permission to your manifest
-          <uses-permission android:name="android.permission.INTERNET" /> (Optional)
-         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+         
+	 <uses-permission android:name="android.permission.INTERNET" />(optional)
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
       
   step 3: Add following lines to your strings.xml file
-            <string name="rationale_location">This app needs to access location.</string>
-            <string name="setting">Settings</string>
-             <string name="cancel">Cancel</string>
+         
+	   <string name="rationale_location">This app needs to access location.</string>
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+	 
              
   step 4: Add copy and past location package along with all the files to your project.(Go to app->src->main->java->aliani->locator->location  
   
