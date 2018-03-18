@@ -24,23 +24,24 @@ Now you just have to copy that package to your application and define some gradl
   
   And congratulation, you have successfully set it up.
   
-  Now in your activity or fragment wherver you want to get location just override on resume method of activity or fragment and add following.
-  ..........
-   @Override
+	
+	Now in your activity or fragment wherver you want to get location just override on resume method of activity or fragment and add following.
+
+		  @Override
     protected void onResume() {
         super.onResume();
-        .........
         new PermissionImpl(MainActivity.this,MainActivity.this).giveMeCurrentLocation();
-        .........
     }
- .........
+
  
  this will ask you to implement LocationView interface and the following callbacks will give you the location .
  
-  @Override
+    @Override
     public void next(@NonNull Location location) {
-      //fused location
+        textLocation.setText(location.getLatitude()+"\n"+location.getLongitude());
+        Log.v("Here",location.getProvider());
     }
+
 
     @Override
     public void error() {
